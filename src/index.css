@@ -1,14 +1,16 @@
+#root {
+    height: 100%;
+}
 #logo {
     width: 200px;
     color: #fff;
     margin-bottom: 0;
-
     text-align: center;
 }
-.pageWrap {
-    min-height: 100vh;
-    /* display: flex;
-    flex-direction: column; */
+.pageWarp {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .headerContainer {
     display: flex;
@@ -16,6 +18,57 @@
 }
 
 .headerContainer .divider {
-    background-color: white;
-    height: 40px;
+    background-color: #ccc;
+    height: 50px;
+    margin: 0 400px 0 50px;
+}
+
+#nav {
+    /* background-color: transparent;
+    color: white; */
+    background: none;
+    border: none;
+}
+
+#nav a {
+    color: #fff;
+}
+
+#nav .ant-menu-item-selected a {
+    color: skyblue;
+}
+
+.main {
+    flex: 1;
+    padding: 20px 100px 20px 100px;   
+    background-color: #e1e1e1;
+ 
+}
+
+.main .warp {
+    height: 100%;
+    border: #ccc 1px solid;
+    display: flex;
+    /* border-top: none; */
+}
+
+#home_nav {
+    height: 100%;
+    width: 200px;
+    background-color: #f0f2f5;
+    text-align: center;
+    border: #ccc 1px solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+#home_nav .ant-menu-item-selected {
+    width: 200px;
+    background-color: #f0f2f5;
+    border-right: 3px solid skyblue;
+}
+
+#list {
+    flex: 1;
 }

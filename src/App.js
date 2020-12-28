@@ -3,7 +3,7 @@ import {} from 'antd';
 import 'antd/dist/antd.css'
 
 
-// import RouterIndex from './router/index'
+import RouterIndex from './router/index'
 import MainHeader from './components/MainHeader';
 import MainFooter from './components/MainFooter';
 
@@ -12,6 +12,9 @@ export default class App extends Component {
     return (
       <div className="pageWarp">
           <MainHeader />
+          <main className="main">
+              <RouterIndex />
+          </main>
           <MainFooter />
       </div>
     )
