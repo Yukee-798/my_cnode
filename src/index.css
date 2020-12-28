@@ -1,0 +1,21 @@
+#logo {
+    width: 200px;
+    color: #fff;
+    margin-bottom: 0;
+
+    text-align: center;
+}
+.pageWrap {
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
+}
+.headerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer .divider {
+    background-color: white;
+    height: 40px;
+}

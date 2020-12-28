@@ -1,9 +1,19 @@
-import React, { Component } from 'react'
-import RouterIndex from './router/index'
+import React, { Component } from 'react';
+import {} from 'antd';
+import 'antd/dist/antd.css'
+
+
+// import RouterIndex from './router/index'
+import MainHeader from './components/MainHeader';
+import MainFooter from './components/MainFooter';
+
 export default class App extends Component {
   render() {
     return (
-      <RouterIndex />
+      <div className="pageWarp">
+          <MainHeader />
+          <MainFooter />
+      </div>
     )
   }
 }
