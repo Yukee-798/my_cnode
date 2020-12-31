@@ -9,28 +9,27 @@ export default class MainHeader extends Component {
     render() {
         
         return (
-            <Layout.Header>
-                <div className="headerContainer">
-                    <h1 id="logo">cNode</h1>
-                    <Divider type="vertical" className="divider"/>
-                    <Menu 
-                        mode="horizontal" 
-                        id="nav"
-                        theme="light"
-                    >
-                        <Menu.Item>
-                            <Link to="/home"><HomeOutlined />首页</Link>
-                        </Menu.Item>
+            <Layout.Header id="header">
+                <h1 id="logo">CNode</h1>
+                <Divider type="vertical" className="divider"/>
 
-                        <Menu.Item>
-                            <Link to="/study"><BookOutlined />教程</Link>
-                        </Menu.Item>
+                <Menu 
+                    mode="horizontal" 
+                    id="nav"
+                    theme="light"
+                >
+                    <Menu.Item>
+                        <Link replace to="/home"><HomeOutlined />首页</Link>
+                    </Menu.Item>
 
-                        <Menu.Item>
-                            <Link to="/about"><InfoCircleOutlined />关于</Link>
-                        </Menu.Item>
-                    </Menu>
-                </div>
+                    <Menu.Item>
+                        <Link replace to="/study"><BookOutlined />教程</Link>
+                    </Menu.Item>
+
+                    <Menu.Item>
+                        <Link replace to="/about"><InfoCircleOutlined />关于</Link>
+                    </Menu.Item>
+                </Menu>
             </Layout.Header>
         )
     }
