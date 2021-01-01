@@ -1,5 +1,4 @@
 # React 实现的 CNode 论坛
----
 
 ## 涉及到的知识点
 * react 
