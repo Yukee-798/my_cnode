@@ -21,11 +21,11 @@ export default class App extends Component {
           <MainHeader />
           <main className="main">
               <Switch>
-                <Route path="/home/:id" component={Home} />
+                <Route path="/home/:category" component={Home} />
                 <Route path="/study" component={Study} />
                 <Route path="/about" component={About} />
-                <Route path="/user" component={User} />
-                <Route path="/details" component={Details} />
+                <Route path="/user/:auther_id" component={User} />
+                <Route path="/details/:article_id" component={Details} />
                 <Redirect to="/home/all" />
               </Switch>
           </main>

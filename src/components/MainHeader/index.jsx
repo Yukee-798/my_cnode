@@ -10,7 +10,7 @@ export default class MainHeader extends Component {
         
         return (
             <Layout.Header id="header">
-                <h1 id="logo">CNode</h1>
+                <h1 id="logo"><Link to='/home'>CNode</Link></h1>
                 <Divider type="vertical" className="divider"/>
 
                 <Menu 

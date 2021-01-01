@@ -99,11 +99,58 @@
     bottom: 0;
 }
 
-#description {
-    margin: 0 20px 0 20px
+/* .list-description {
 }
 
 
-#date {
+.list-description-date {
+}
+
+.list-description-replyandvisit {
+    
+} */
+
+.details-header-description {
+    margin-top: 10px;
+}
+
+.list-description-replyandvisit {
     margin-right: 30px;
 }
+
+.list-description-lastreply {
+    margin-right: 10px;
+}
+
+.user-avatar {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.username {
+    text-align: center;
+    color: #778087;
+}
+
+.user-description {
+    display: flex;
+    font-size: 10px;
+    color: #778087;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.user-description-icon {
+    font-size: 18px;
+    margin: 0 8px 0 0; 
+}
+
+.user-description-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+

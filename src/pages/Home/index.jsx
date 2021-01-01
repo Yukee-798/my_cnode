@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom'
 import { Menu } from 'antd'
 
 import MyList from '../../components/MyList'
+
 export default class Home extends Component {
     render() {
+
         // console.log(this.props.match.params);
         return (
             <div className="warp">
@@ -23,7 +25,7 @@ export default class Home extends Component {
                     </Menu.Item>
                 </Menu>
 
-                <MyList />
+                <MyList params={this.props.match.params}/>
 
             </div>
         )

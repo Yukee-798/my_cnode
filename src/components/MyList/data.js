@@ -1,4 +1,4 @@
-const data = {
+const allArticleInfo = {
     "success": true,
     "data": [{
         "id": "5a37c17dd92f2f5b185acfc4",
@@ -6,7 +6,7 @@ const data = {
         "tab": "share",
         "content": "<div class=\"markdown-text\"><p><img src=\"https://dn-cnode.qbox.me/FuvPQvPz9RBxT07UrcBumIxmg-8G\" alt=\"1.png\"></p>\n<h2>大会简介</h2>\n<p>SEE = Seeking Experience &amp; Engineering，意为探索用户体验与工程实践，由蚂蚁金服集团每年举办 1-2 次，包括专业分享、产品展台、Workshop 等内容。希望通过 SEE Conf，能与业界同行一起分享交流体验科技的当前进展，一起探讨切磋体验科技的未来发展，共同努力促进体验设计与技术的开放，让生态繁荣共赢。</p>\n<p>首届 <a href=\"https://seeconf.alipay.com/\">SEE Conf</a> 将于 2018.01.06 在美丽的浙江杭州举办，届时我们将邀请数百位来自前端、设计、产品等领域的英才，围绕「极致用户体验」和「最佳工程实践」两大主题进行探讨交流。</p>\n<h2>特邀嘉宾</h2>\n<ul>\n<li>蚂蚁金服副总裁：胡喜 (阿玺)</li>\n<li>美团高级技术总监 ／ 业务负责人：刘平川 (rank)</li>\n<li>饿了么大前端部门负责人：林建锋 (sofish)</li>\n<li>百姓网资深前端架构师：贺师俊 (hax)</li>\n<li>豆瓣资深前端架构师：张克军 (kejun）</li>\n<li>钉钉资深技术专家：石玉磊 (佩玉)</li>\n<li>支付宝 UED 负责人：梁山鹰 (隼飞)</li>\n<li>蚂蚁金服体验技术部负责人：王保平 (玉伯)</li>\n</ul>\n<h2>会议日程</h2>\n<p>大会于 2018.01.06 正式召开，当天日程如下：</p>\n<ul>\n<li>09:00 - 09:15：开幕致辞</li>\n<li>09:15 - 10:00：蚂蚁中台设计体系 —— Ant Design 3.0 背后的故事</li>\n<li>10:00 - 10:45：Developer Experience First —— TWA 的理念与实践</li>\n<li>10:45 - 11:30：惊艳的互联网互动体验 —— AntG</li>\n<li>11:30 - 13:30：午间休息</li>\n<li>13:30 - 14:15：TECH 模型：企业级中后台产品体验度量探索</li>\n<li>14:15 - 15:00：AntV，返璞归真幻化万千可视化表达</li>\n<li>15:00 - 15:45：蚂蚁开发者工具，服务蚂蚁生态的移动研发 IDE</li>\n<li>15:45 - 16:30：轻推转型之门：Ant Design Pro 在企业级产品的探索</li>\n<li>16:30 - 16:45：从前端技术到体验科技，暨蚂蚁体验云起航</li>\n<li>16:45 - 17:15：圆桌 —— 体验科技的发展及未来</li>\n</ul>\n<h2>大会看点</h2>\n<p>这是蚂蚁金服体验科技首次对外发声，有大家熟悉的各个明星产品。有一个产品，过去 14 个月在 GitHub 的 star 数从 4k 飙升至 2w+，\n这是蚂蚁设计语言 <a href=\"https://ant.design/index-cn\">Ant Design</a>，她是在怎样的业务土壤与团队文化中成长起来的？背后有着怎样的故事？还有一个产品，刚一开源就得到世界级计算机科学家 <a href=\"https://www.cs.uic.edu/~wilkinson/\">Leland Wilkinson</a> 的肯定，这款技术产品是 <a href=\"https://github.com/antvis/g2\">G2</a>，其背后更大的蚂蚁可视化 <a href=\"https://antv.alipay.com/zh-cn/index.html\">AntV</a> 体系是本着怎样的初心在坚持前行？回顾过往，基于 Node.js 的前后端分层这几年在阿里经历了怎样的风雨？什么是 BFF（Backend For Frontend）架构？更进一步的 <strong>TWA</strong>（Techless Web App）架构是为了解决什么问题？为企业级框架和应用而生的 <a href=\"https://eggjs.org/\">Egg.js</a> 将走向何方？</p>\n<p>除此之外，还有最前沿的移动研发 IDE 技术和企业级产品体验度量的探索分享，更有未曾对外曝光，但已适配了千万机型的 Web 互动图形技术 AntG 将首度登台。从前端技术到体验科技，玉伯这位前端圈里的传奇黑侠将为我们讲述的“<strong>蚂蚁体验云</strong>”究竟是什么。</p>\n<p><img src=\"https://gw.alipayobjects.com/zos/rmsportal/ODVJIUEvmuKCwXqqJPfo.jpg\" alt></p>\n<p>技术大会不光能听到干货，还能面基好友结交各路大神。除了议程提到的众多明星嘉宾，从目前报名中已经发现数十位重量级人物，不乏知名公司的产品、设计总监，架构师，新锐公司的 CXO 和领域新秀。</p>\n<p>另外，蚂蚁金服是个藏龙卧虎的地方，有知名博主，也有知乎网红，有 Node.js、Ruby 等各个技术社区的大拿，还有仙剑主程、艺术插画大师，图形图像、数据可视化专家也会出没会场，有的还当起了会场志愿者在门口热切地期待着你的到来。他们会游走在会场与各个展台之间，也许就坐在你身边，这是面基好友结交大神的好时候，机会难得。</p>\n<p><img src=\"https://gw.alipayobjects.com/zos/rmsportal/DdjWkCAawyOMhFnLpGLK.jpg\" alt></p>\n<h2>如何报名</h2>\n<p>访问 <a href=\"https://seeconf.alipay.com/\">SEE Conf · 蚂蚁金服体验科技大会</a>，点击「立即报名」按钮</p>\n<p>支付宝扫描下方二维码</p>\n<p><img src=\"https://gw.alipayobjects.com/zos/rmsportal/gmcvvumwUehXYbTPBPno.gif\" alt></p>\n</div>",
         "title": "首届蚂蚁金服体验科技大会",
-        "last_reply_at": "2018-01-21T09:51:48.428Z",
+        "last_reply_at": "2020-01-21T09:51:48.428Z",
         "good": false,
         "top": true,
         "reply_count": 36,
@@ -643,4 +643,4 @@ const data = {
     }]
 };
 
-export default data;
+export default allArticleInfo;
