@@ -1,10 +1,33 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { List, Avatar } from 'antd'
+import PubSub from 'pubsub-js';
 import MyTag from '../MyTag'
-import allArticleInfo from './data';
 
-export default class MyList extends Component {
+
+class MyList extends Component {
+
+    state = {
+        page: 1,
+        isLoading: false,
+        type: 'all',
+        data: [],
+        err: ''
+    }
+
+
+    // 订阅消息
+    componentDidMount() {
+        this.token = PubSub.subscribe('updateListState', (msg, stateObj) => {
+            
+            this.setState(stateObj)
+        });
+    }
+
+    // 取消订阅
+    componentWillUnmount() {
+        PubSub.unsubscribe(this.token);
+    }
 
     offsetTime = (date, lastReplayTimeStr) => {
         let nowDate = {
@@ -43,47 +66,27 @@ export default class MyList extends Component {
         );
     }
 
-    filterData = (category) => {
-        let newInfoArr = allArticleInfo.data.filter((item) => {
-            return (category === 'good' && item.good) || item.tab === category;
-        });
-        return newInfoArr;
-    }
 
     render() {
-        const category = this.props.params.category;
-
-        let infoArr = allArticleInfo.data;
-        // 数据过滤
-        if (category === 'share' || category === 'question' || category === 'good') {
-            
-            switch (category) {
-                case 'share':
-                    infoArr = this.filterData('share')
-                break;
-
-                case 'question':
-                    infoArr = this.filterData('ask')
-                break;
-
-                case 'good':
-                    infoArr = this.filterData('good')
-                break;
-
-                default:
-                    infoArr = allArticleInfo.data;
-            }
-        }
-
-        console.log(infoArr);
-        
+        const { isLoading, data } = this.state;
 
         return (
             <List
-                id="list"
-                loading={false}
-                dataSource={infoArr}
-                renderItem={item => (
+                id = "list"
+                loading = { isLoading }
+                dataSource = { data }
+                pagination = {
+                    {
+                        current: this.state.page,
+                        pageSize: 30,
+                        total: 1000,
+                        onChange: (current) => {
+                            this.setState({ page: current });
+                            PubSub.publish('updatePage', current);
+                        }
+                    } 
+                }
+                renderItem = { item => (
                     // 这里判断 props
                     <List.Item>
                         <List.Item.Meta
@@ -120,3 +123,5 @@ export default class MyList extends Component {
         )
     }
 }
+
+export default MyList;

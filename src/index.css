@@ -153,4 +153,23 @@
     margin-top: 10px;
 }
 
+.ant-pagination-item-link {
+    background-color: #f0f2f5 !important;
+}
+.ant-pagination-prev {
+    background-color: #f0f2f5 !important;
+}
+.ant-pagination-item {
+    background-color: #f0f2f5 !important;
+}
+
+.ant-pagination-next {
+    background-color: #f0f2f5 !important;
+}
+
+.ant-pagination-options {
+    display: none !important;
+}
+
+
 

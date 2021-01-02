@@ -7,10 +7,11 @@ export default class About extends Component {
         return (
             <div className="about-warp">
                 {
-                    data.map((item) => {
+                    data.map((item, index) => {
                         return (
                             <Card
-                                title={ item.title }
+                                title = { item.title }
+                                key = { index }
                             >
                                 <div
                                     dangerouslySetInnerHTML={

@@ -6,7 +6,7 @@ import usersInfo from './data'
 
 export default class User extends Component {
     render() {
-        const { avatar_url, loginname, create_at, score, recent_topics, githubUsername } = usersInfo.data;
+        const { avatar_url, loginname, create_at, score, githubUsername } = usersInfo.data;
         console.log(this.props.match.params);
 
         return (
@@ -41,9 +41,7 @@ export default class User extends Component {
                         </div>
                     }
                 >
-
                 </Card>
-
             </div>
         )
     }

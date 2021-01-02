@@ -9,10 +9,11 @@ export default class Study extends Component {
         return (
             <div className='study-warp'>
                 {
-                    data.map((item) => {
+                    data.map((item, index) => {
                         return (
                             <Card
-                                title={item.title}
+                                key = {index}
+                                title = {item.title}
                             >
                                 <div
                                     dangerouslySetInnerHTML={
