@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
-import {} from 'antd';
-import 'antd/dist/antd.css'
+// import {} from 'antd';
+// import PubSub from 'pubsub-js';
+import 'antd/dist/antd.css';
 
 import MainHeader from './components/MainHeader';
 import MainFooter from './components/MainFooter';
@@ -15,6 +16,12 @@ import User from './pages/User';
 import Details from './pages/Details';
 
 export default class App extends Component {
+
+  componentDidMount() {
+    // PubSub.publish('changeTopNavSelected', ['1']);
+    // PubSub.publish('changeLeftNavSelected', ['1']);
+  }
+
   render() {
     return (
       <div className="pageWarp">

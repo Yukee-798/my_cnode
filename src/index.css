@@ -171,5 +171,9 @@
     display: none !important;
 }
 
+.markdown-text img {
+    width: 100%;
+}
+
 
 

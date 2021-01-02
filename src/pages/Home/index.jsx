@@ -34,7 +34,7 @@ export default class Home extends Component {
             params: {
                 page: this.state.page,
                 tab: type === 'all' ? '' : type,
-                limit: 30
+                limit: 20
             }
         }).then(
             response => {
@@ -52,17 +52,17 @@ export default class Home extends Component {
         );
         return (
             <div className="warp">
-                <Menu id="home_nav">
-                    <Menu.Item>
+                <Menu id="home_nav" defaultSelectedKeys={['1']}>
+                    <Menu.Item key='1'>
                         <NavLink replace to="/home/all">全部</NavLink>
                     </Menu.Item>
-                    <Menu.Item>
+                    <Menu.Item key='2'>
                         <NavLink replace to="/home/good">精华</NavLink>
                     </Menu.Item>
-                    <Menu.Item>
+                    <Menu.Item key='3'>
                         <NavLink replace to="/home/share">分享</NavLink>
                     </Menu.Item>
-                    <Menu.Item>
+                    <Menu.Item key='4'>
                         <NavLink replace to="/home/ask">问答</NavLink>
                     </Menu.Item>
                 </Menu>

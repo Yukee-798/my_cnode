@@ -9,7 +9,7 @@ class MyList extends Component {
 
     state = {
         page: 1,
-        isLoading: false,
+        isLoading: true,
         type: 'all',
         data: [],
         err: ''
@@ -68,9 +68,10 @@ class MyList extends Component {
 
 
     render() {
-        const { isLoading, data } = this.state;
+        const { err ,isLoading, data } = this.state;
 
         return (
+            err ? <div>{err}</div> :
             <List
                 id = "list"
                 loading = { isLoading }
@@ -78,7 +79,7 @@ class MyList extends Component {
                 pagination = {
                     {
                         current: this.state.page,
-                        pageSize: 30,
+                        pageSize: 20,
                         total: 1000,
                         onChange: (current) => {
                             this.setState({ page: current });

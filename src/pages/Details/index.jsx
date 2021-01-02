@@ -1,18 +1,44 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'antd'
+import axios from 'axios'
 import MyTag from '../../components/MyTag'
-import articleDetails from './data'
 
 export default class Details extends Component {
+    state = {
+        isLoading: true,
+        data: {},
+        err: ''
+    }
+
+    componentDidMount() {
+        // 获取文章 id
+        const id = this.props.match.params.article_id;
+
+        axios.get(`https://cnodejs.org/api/v1/topic/${id}`)
+             .then(
+                 response => {
+                    // console.log(response.data.data);
+                    this.setState({ data: response.data, isLoading: false })
+                 },
+                 error => {
+                     this.setState({ err: error, isLoading: false })
+                 }
+             );
+    }
+
     render() {
 
-        // 获取文章 id
-        // console.log(this.props.match.params);
-        const { data, data: { title, create_at, author, visit_count, tab, content } } = articleDetails;
+        if (!this.state.isLoading) {
+            var { data, data: { title, create_at, author, visit_count, tab, content } } = this.state.data;
+        }
+
         return (
+            this.state.isLoading ? <Card loading={true}></Card> :
+            this.state.err ? this.state.err :
             <div className='details-warp'>
                 <Card
+                    loading={this.state.isLoading}
                     title={
                         <div className='details-header'>
                             <div className='details-header-title'>
@@ -39,7 +65,6 @@ export default class Details extends Component {
                             }
                         }
                     >
-
                     </div>
 
                 </Card>
