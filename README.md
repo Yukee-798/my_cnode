@@ -5,16 +5,18 @@
 * react-router-dom
 * axios
 * antd
+* PubSub
 
 ## 功能介绍
 ### 首页
 可以通过左侧导航栏来归类每条帖子的类型。
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm8ba7bclhj31k00u07fd.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9kk3afkaj31k90u0nah.jpg)
 
 点击每条帖子可以进入文章详情页面。
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm8befsiv2j31k90u0dq1.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9kljs5zkj31k70u012j.jpg)
 
 点击每条帖子左侧头像可以进入用户详情页面。
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm9kjl4tgwj31jz0u0gqh.jpg)
 
 
 ### 教程
