@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    align-items: center;
+    .header-divider {
+        background-color: #ccc;
+        height: 50px;
+        margin: 0 100px 0 50px;
+    }
+    .header-logo {
+        width: 200px;
+        color: #fff;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .header-nav {
+        background: none;
+        border: none;
+            a {
+            color: #fff;
+        }
+        .ant-menu-item-selected a {
+            color: skyblue;
+        }
+    }
+}
+
+
+
+
