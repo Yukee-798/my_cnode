@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Avatar, Card } from 'antd';
 import { EuroOutlined, GithubOutlined, CalendarOutlined } from '@ant-design/icons';
 import axios from 'axios'
-
+import './index.scss'
 
 export default class User extends Component {
     
@@ -42,7 +42,7 @@ export default class User extends Component {
                                     className='user-avatar'
                                     src={avatar_url}
                                 />
-                                <div className='username'>{ loginname }</div>
+                                <div className='user-name'>{ loginname }</div>
                             </div>
 
                             <div className='user-description'>

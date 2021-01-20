@@ -5,7 +5,7 @@ import { Layout, Menu, Divider } from "antd";
 
 import 'antd/dist/antd.css';
 import { HomeOutlined, BookOutlined, InfoCircleOutlined } from '@ant-design/icons';
-
+import './index.scss'
 
 export default class MainHeader extends Component {
     // state = {
@@ -22,13 +22,13 @@ export default class MainHeader extends Component {
 
     render() {
         return (
-            <Layout.Header id="header">
-                <h1 id="logo"><Link to='/home'>CNode</Link></h1>
-                <Divider type="vertical" className="divider"/>
+            <Layout.Header className="header">
+                <h1 className="header-logo"><Link to='/home'>CNode</Link></h1>
+                <Divider type="vertical" className="header-divider"/>
 
                 <Menu 
                     mode="horizontal" 
-                    id="nav"
+                    className="header-nav"
                     theme="light"
                     defaultSelectedKeys={['1']}	
                 >

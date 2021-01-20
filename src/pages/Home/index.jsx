@@ -4,7 +4,7 @@ import { Menu } from 'antd'
 import axios from 'axios'
 import PubSub from 'pubsub-js';
 
-
+import './index.scss'
 import MyList from '../../components/MyList'
 
 export default class Home extends Component {
@@ -19,7 +19,9 @@ export default class Home extends Component {
 
             this.setState({ page });
         });
+        // console.log('Home组件重新挂载了');
     }
+
 
     // 取消订阅
     componentWillUnmount() {
@@ -28,6 +30,8 @@ export default class Home extends Component {
 
     render() {
         let type = this.props.match.params.category;
+
+
         PubSub.publish('updateListState', { isLoading: true });
 
         axios.get(' https://cnodejs.org/api/v1/topics', {
@@ -50,9 +54,11 @@ export default class Home extends Component {
                 PubSub.publish('updateListState', newListState);
             }
         );
+
+
         return (
-            <div className="warp">
-                <Menu id="home_nav" defaultSelectedKeys={['1']}>
+            <div className="main-home-warp">
+                <Menu className="main-home-nav" defaultSelectedKeys={['1']}>
                     <Menu.Item key='1'>
                         <NavLink replace to="/home/all">全部</NavLink>
                     </Menu.Item>

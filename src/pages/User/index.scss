@@ -1,0 +1,38 @@
+.user-warp {
+    .user-avatar-warp {
+        .user-avatar {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+        .user-name {
+            text-align: center;
+            color: #778087;
+        }        
+    }
+    .user-description {
+        display: flex;
+        font-size: 10px;
+        color: #778087;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .user-description-item {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        .user-description-icon {
+            font-size: 18px;
+            margin: 0 8px 0 0; 
+        }
+    }
+}
+
+
+
+
+
+
+
+

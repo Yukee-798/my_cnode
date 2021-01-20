@@ -1,0 +1,24 @@
+.main-list {
+    flex: 1;
+    .ant-list-item-meta {
+        display: flex;
+        padding-left: 30px;
+        position: relative;
+        align-items: center;
+    }
+    .ant-list-item-meta-description {
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        right: 0;
+        bottom: 0;
+    }
+
+    .main-list-description-replyandvisit {
+        margin-right: 30px;
+    }
+
+    .main-list-description-lastreply {
+        margin-right: 10px;
+    }
+}

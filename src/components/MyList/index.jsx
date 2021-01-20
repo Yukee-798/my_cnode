@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { List, Avatar } from 'antd'
 import PubSub from 'pubsub-js';
 import MyTag from '../MyTag'
+import './index.scss'
 
 
 class MyList extends Component {
@@ -22,6 +23,7 @@ class MyList extends Component {
             
             this.setState(stateObj)
         });
+        // console.log('List 组件重新挂载了');
     }
 
     // 取消订阅
@@ -73,7 +75,7 @@ class MyList extends Component {
         return (
             err ? <div>{err}</div> :
             <List
-                id = "list"
+                className = "main-list"
                 loading = { isLoading }
                 dataSource = { data }
                 pagination = {
@@ -102,14 +104,14 @@ class MyList extends Component {
 
 
                             description={
-                                <span className='list-description'>
+                                <span className='main-list-description'>
 
-                                    <span className='list-description-replyandvisit'>
+                                    <span className='main-list-description-replyandvisit'>
                                         <span style={{ color: '#9e78c0', fontSize: '14px', fontWeight: 'bold' }}>{item.reply_count}</span>
                                         <span style={{ fontSize: '12px' }}>/{item.visit_count}</span>
                                     </span>
 
-                                    <span className='list-description-lastreply' style={{ fontSize: '10px' }}>
+                                    <span className='main-list-description-lastreply' style={{ fontSize: '10px' }}>
                                         <span>{this.offsetTime(new Date(), item.last_reply_at)}</span>
                                     </span>
                                 </span>

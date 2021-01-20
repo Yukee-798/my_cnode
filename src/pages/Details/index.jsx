@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Card } from 'antd'
 import axios from 'axios'
 import MyTag from '../../components/MyTag'
+import './index.scss'
 
 export default class Details extends Component {
     state = {

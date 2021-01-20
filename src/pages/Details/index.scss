@@ -1,0 +1,14 @@
+.details-warp {
+    .details-header {
+        .details-header-title {
+            display: flex;
+            align-items: center;
+        }
+        .details-header-description {
+            margin-top: 10px;
+        }
+    }
+    .markdown-text img {
+        width: 90%;
+    }
+}
