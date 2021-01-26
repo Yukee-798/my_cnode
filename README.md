@@ -3,9 +3,10 @@
 ## 涉及到的知识点
 * react 
 * react-router-dom
+* redux
+* react-redux
 * axios
 * antd
-* PubSub
 
 ## 功能介绍
 ### 首页
